@@ -6,5 +6,9 @@
 
 body {
     font-family: "Roboto Mono", monospace;
-    @apply bg-slate-900 text-white;
+    @apply bg-gray-900 text-white;
+}
+
+h1 {
+    @apply font-bold text-2xl;
 }

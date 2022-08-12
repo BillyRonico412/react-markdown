@@ -9,11 +9,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dompurify": "^2.3.10",
+    "github-markdown-css": "^5.1.0",
+    "marked": "^4.0.18",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0"
   },
   "devDependencies": {
+    "@types/dompurify": "^2.3.3",
+    "@types/marked": "^4.0.3",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@types/react-icons": "^3.0.0",
