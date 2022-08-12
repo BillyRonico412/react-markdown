@@ -1,34 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { FaBars, FaSave } from "react-icons/fa";
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+    return (
+        <div className="container mx-auto bg-slate-800 h-screen">
+            <nav className="bg-slate-700 flex">
+                <button className="bg-slate-600 px-6">
+                    <FaBars className="text-lg scale-x-[200%]" />
+                </button>
+                <div className="py-2 flex items-center">
+                    <a href="#" className="px-8 tracking-widest font-bold">MARKDOWN</a>
+                    <div className="border h-6"></div>
+                </div>
+				<div className="ml-auto flex items-center py-4">
+					<button className="flex items-center gap-x-2 bg-orange-600 px-4 py-2 rounded shadow mr-8">
+						<FaSave/>
+						<span>
+							Save changes
+						</span>
+					</button>
+				</div>	
+            </nav>
+        </div>
+    );
+};
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
-}
-
-export default App
+export default App;
